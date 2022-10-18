@@ -1,5 +1,6 @@
 package Cars;
 
+import java.sql.SQLOutput;
 import java.util.SortedMap;
 
 public class Main {
@@ -10,21 +11,29 @@ public class Main {
     c1.fuelConsumption = 7;
     c1.serialNumber = "B0001";
     c1.fuelAmount = 70;
+    c1.maxFuelAmount = 100;
 
     Car c2 = new Car();
     c2.brand = "Audi";
     c2.fuelConsumption = 5;
     c2.serialNumber = "A0001";
-    c2.fuelAmount = 20;
+    c2.fuelAmount = 10;
+    c2.maxFuelAmount = 100;
 
-    System.out.println(c2.fuelAmount);
+    c2.turboBoost();
+
+    c2.honk(5);
+
+    c2.getRemainingRange();
+    /* System.out.println(c2.fuelAmount);
     c2.drive();
     System.out.println(c2.fuelAmount);
-
-
+    c2.bremsen();
 
     System.out.println(c2.serialNumber);
     System.out.println(c1.brand);
+    */
+
 
 /*
         // DONT DONT DONT

@@ -2,6 +2,8 @@ package Cars;
 
 import jdk.jshell.spi.ExecutionControl;
 
+import java.sql.SQLOutput;
+
 public class Car {
     // Instanz / Gedächtnisvariablen
 
@@ -12,8 +14,35 @@ public class Car {
     public String serialNumber;
     private String color;
 
-    public void drive(){
+    public int maxFuelAmount;
+
+
+    public void drive() {
         this.fuelAmount = this.fuelAmount - fuelConsumption;
         System.out.println("Driving car");
     }
-}
+
+    public void bremsen() {
+        System.out.println("Ich bremse");
+    }
+
+    public void turboBoost() {
+        if (fuelAmount >= 0.1 * maxFuelAmount)
+            System.out.println("SuperBoostMode aktiviert.");
+        else
+            System.out.println("SuperBoostMode kann nicht aktiviert werden.");
+
+    }
+
+    public void honk(int amountOfRepetitions) {
+        for (int i = 0; amountOfRepetitions > i; i++) {
+            System.out.println("Tuuuut");
+        }
+    }
+
+    public void getRemainingRange() {
+        System.out.println(fuelAmount/fuelConsumption + " Fahrten können gemacht werden.");
+        }
+    }
+
+

@@ -1,5 +1,7 @@
 package Cars;
 
+import java.util.SortedMap;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,11 +9,19 @@ public class Main {
     c1.brand = "Benz";
     c1.fuelConsumption = 7;
     c1.serialNumber = "B0001";
+    c1.fuelAmount = 70;
 
     Car c2 = new Car();
     c2.brand = "Audi";
     c2.fuelConsumption = 5;
     c2.serialNumber = "A0001";
+    c2.fuelAmount = 20;
+
+    System.out.println(c2.fuelAmount);
+    c2.drive();
+    System.out.println(c2.fuelAmount);
+
+
 
     System.out.println(c2.serialNumber);
     System.out.println(c1.brand);

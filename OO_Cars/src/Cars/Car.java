@@ -13,8 +13,14 @@ public class Car {
     public String brand;
     public String serialNumber;
     private String color;
-
     public int maxFuelAmount;
+
+    public Car(int fuelConsumption, String brand, String serialNumber, String color){
+        this.fuelConsumption = fuelConsumption;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+        this.color = color;
+    }
 
 
     public void drive() {

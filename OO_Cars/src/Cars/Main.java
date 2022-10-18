@@ -1,11 +1,13 @@
 package Cars;
 
+import javax.imageio.plugins.bmp.BMPImageWriteParam;
 import java.sql.SQLOutput;
 import java.util.SortedMap;
 
 public class Main {
     public static void main(String[] args) {
 
+ /*
     Car c1 = new Car();
     c1.brand = "Benz";
     c1.fuelConsumption = 7;
@@ -21,10 +23,14 @@ public class Main {
     c2.maxFuelAmount = 100;
 
     c2.turboBoost();
-
     c2.honk(5);
-
     c2.getRemainingRange();
+*/
+
+    Car c3 = new Car( 15, "BMW", "BMW123", "black");
+
+        System.out.println(c3.brand);
+
     /* System.out.println(c2.fuelAmount);
     c2.drive();
     System.out.println(c2.fuelAmount);
